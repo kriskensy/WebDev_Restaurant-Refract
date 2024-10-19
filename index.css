@@ -34,6 +34,12 @@ body, html{
 
 .logo{
     font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+
+.restaurant{
+    display: block;
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
@@ -132,4 +138,70 @@ body, html{
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
+}
+
+/*section our restaurant*/
+.our-restaurant{
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.our-restaurant .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.our-restaurant .section-title{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.our-restaurant .section-title::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #8b0000;
+    margin: 20px auto 0;
+}
+
+.restaurant-section{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.restaurant-section.reverse{
+    flex-direction: row-reverse;
+}
+
+.restaurant-image{
+    flex: 1;
+    overflow: hidden;
+}
+
+.restaurant-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.restaurant-description-wrapper{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-description{
+    padding: 0 20px;
+    background-color: #000;
+}
+
+.restaurant-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
