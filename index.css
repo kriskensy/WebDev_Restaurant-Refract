@@ -52,3 +52,46 @@ body, html{
     width: 50px;
     height: auto;
 }
+
+/*intro section*/
+.intro{
+    background-color: #2c1a1a;
+    color: #ffffff;
+    padding: 40px 0; /*top and bottom padding*/
+}
+
+.intro .container{
+    max-width: 800px;
+    margin: 0 auto; /*center content*/
+    position: relative; /*for decorative lines*/
+}
+
+.intro p{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px 0; /*inner padding*/
+}
+
+.intro .highlight{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.intro .container::before,
+.intro .container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ffffff; /*white line*/
+}
+
+.intro .container::before{
+    top: 0;
+}
+
+.intro .container::after{
+    bottom: 0;
+}
