@@ -294,3 +294,101 @@ body, html{
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+/*section Contact*/
+.contact{
+    background-color: white;
+    color: #2c1a1a;
+    padding: 50px 0;
+}
+.contact .container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact .section-title{
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.contact .section-title::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #8b0000;
+    margin: 20px auto 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;;
+    gap: 20px; /*between formular fields*/
+}
+
+.contact-details, .message-details{ /*frame remove from fieldset*/
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #8b0000;
+    border-radius: 4px;
+    background-color: white;
+    color: #000000;
+    font-size: 16px;
+}
+
+.contact-form textarea{
+    height: 200px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: #000000;
+}
+
+.contact-details input{
+    margin-bottom: 20px;
+}
+
+.contact-form button{
+    background-color: #2c1a1a;
+    color: #ffffff;
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.6s ease-out;
+}
+
+.contact-form button:hover{
+    background-color: #8b0000;
+}
+
+/*Footer*/
+.page-footer{
+    background-color: rgba(56, 23, 16);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.page-footer .container{
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-footer p{
+    margin: 0;
+    font-size: 16px;
+}
